@@ -61,7 +61,10 @@ pass this in raw body in JSON formate
   "title": "Writen by Testing@123",
   "description": "wrtin by testering"
 }
-## Delete Create Item using DELETE MEthod
+## Get Create Item using GET method
+localhost:5000/items/
+This will fetch all the item created
+## Delete Create Item using DELETE method
 localhost:5000/items/:ID
 
 pass the token in bearer token 
