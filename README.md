@@ -49,7 +49,7 @@ pass the token in bearer token
 pass this in raw body in JSON formate
 {
   "title": "Writen by Testing@123",
-  "description": "wrtin by testering"
+  "description": "Writen by testing"
 }
 ## Update Create Item using PUT method
 localhost:5000/items/:ID
@@ -59,7 +59,7 @@ pass the token in bearer token
 pass this in raw body in JSON formate
 {
   "title": "Writen by Testing@123",
-  "description": "wrtin by testering"
+  "description": "Writen by testing for test"
 }
 ## Get Create Item using GET method
 localhost:5000/items/
