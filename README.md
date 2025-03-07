@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+Install the node modules using the above comment
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -13,6 +16,55 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### Server side Folder name(item-management-api)
+Install node module using "npm install"
+and run the server using "nodemon server.js"
+the server will run on localhost:5000 port
+## Registration using POST method
+localhost:5000/users/register
+
+pass this in raw body in JSON formate
+
+{
+  "name": "Testing",
+  "email": "Testing123@example.com",
+  "password": "Test@123"
+}
+## Login using POST method
+ localhost:5000/users/login
+
+pass this in raw body in JSON formate
+
+{
+  "email": "Testing123@example.com",
+  "password": "Test@123"
+}
+after login it will generate a token which will be use as auth for creating CRUD operation
+## Create Item using POST method
+localhost:5000/items/
+
+pass the token in bearer token 
+
+pass this in raw body in JSON formate
+{
+  "title": "Writen by Testing@123",
+  "description": "wrtin by testering"
+}
+## Update Create Item using PUT method
+localhost:5000/items/:ID
+
+pass the token in bearer token 
+
+pass this in raw body in JSON formate
+{
+  "title": "Writen by Testing@123",
+  "description": "wrtin by testering"
+}
+## Delete Create Item using DELETE MEthod
+localhost:5000/items/:ID
+
+pass the token in bearer token 
 
 ### `npm test`
 
